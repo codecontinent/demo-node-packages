@@ -3,5 +3,5 @@
     "baseUrl": "./"
   },
   "extends": "./tsconfig.build.json",
-  "include": ["./packages/**/*.ts", "**/*.(spec|test).ts"]
+  "include": ["./packages/**/*.ts", "**/*.spec.ts"]
 }

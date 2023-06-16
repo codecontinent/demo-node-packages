@@ -8,6 +8,8 @@ lerna-debug.log*
 .pnpm-debug.log*
 
 # Custom
+/dist/
+dist/*
 .vscode/*
 !.vscode/settings.json
 .husky/*

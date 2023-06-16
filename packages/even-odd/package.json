@@ -1,12 +1,16 @@
 {
   "name": "@cc/even-odd",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Demo node package for find even or odd by @CodeContinent",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "files": [
+    "dist/"
+  ],
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "npx rimraff dist && npx tsc -p tsconfig.pkg.json"
+    "test": "jest",
+    "compile": "rimraf dist && tsc -p tsconfig.pkg.json && tsc -p tsconfig-cjs.json"
   },
   "repository": {
     "type": "git",
