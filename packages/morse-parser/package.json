@@ -1,7 +1,7 @@
 {
   "name": "@cc/morse-parser",
   "version": "1.0.0",
-  "description": "",
+  "description": "A morse code parser demo node package by @CodeContinent",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "files": [
@@ -10,6 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "jest",
+    "cleanup": "rimraf dist",
     "compile": "rimraf dist && tsc -p tsconfig.pkg.json && tsc -p tsconfig-cjs.json"
   },
   "repository": {

@@ -10,6 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "jest",
+    "cleanup": "rimraf dist",
     "compile": "rimraf dist && tsc -p tsconfig.pkg.json && tsc -p tsconfig-cjs.json"
   },
   "repository": {

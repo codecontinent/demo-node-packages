@@ -3,5 +3,6 @@
     "baseUrl": "./"
   },
   "extends": "./tsconfig.build.json",
-  "include": ["./packages/**/*.ts", "**/*.spec.ts"]
+  "include": ["./packages/**/*.ts", "**/*.spec.ts"],
+  "exclude": ["dist"]
 }

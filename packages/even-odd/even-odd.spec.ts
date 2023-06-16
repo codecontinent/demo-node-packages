@@ -1,6 +1,6 @@
 import { isEven, isOdd } from '@cc/even-odd'
 
-describe('Unit test for Even/Odd functions', () => {
+describe('Unit test for Even-Odd functions', () => {
   test('should detect the even numbers: isEven()', () => {
     expect(isEven(0)).toBe(true)
     expect(isEven(1)).toBe(false)
