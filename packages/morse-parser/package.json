@@ -1,0 +1,22 @@
+{
+  "name": "@cc/morse-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx rimraff dist && npx tsc -p tsconfig.pkg.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codecontinent/demo-node-packages.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codecontinent/demo-node-packages/issues"
+  },
+  "homepage": "https://github.com/codecontinent/demo-node-packages#readme"
+}
