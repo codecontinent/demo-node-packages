@@ -1,25 +1,25 @@
-import { codes } from "./morse-codes";
+import { codes } from './morse-codes'
 
-export function decode_letter(code: string): string {
-  return codes[code];
+export function decodeLetter(code: string): string {
+  return codes[code]
 }
 
-export function decode_word(code: string): string {
-  let word: string = "";
-  code.split(/\s/i).map((chunk) => (word += decode_letter(chunk)));
-  return word;
+export function decodeWord(code: string): string {
+  let word = ''
+  code.split(/\s/i).map((chunk) => (word += decodeLetter(chunk)))
+  return word
 }
 
 export function decode(code: string): string {
-  let decodedMessage: string = "",
-    notFirstWord = false;
-  code.split(/\s\s\s/i).map((chunk) => {
+  let decodedMessage = ''
+  let notFirstWord = false
+  code.split(/\s\s\s/i).forEach((chunk) => {
     if (notFirstWord) {
-      decodedMessage += " ";
+      decodedMessage += ' '
     } else {
-      notFirstWord = true;
+      notFirstWord = true
     }
-    decodedMessage += decode_word(chunk);
-  });
-  return decodedMessage;
+    decodedMessage += decodeWord(chunk)
+  })
+  return decodedMessage
 }
