@@ -1,0 +1,18 @@
+{
+  "exclude": ["**/*.test.ts", "**/*.spec.ts", "node_modules", "dist"],
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ESNext",
+    "declarationMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "paths": {
+      "@cc/*": ["./packages/*"]
+    }
+  }
+}
